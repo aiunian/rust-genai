@@ -15,8 +15,13 @@ pub struct OpenRouterAdapter;
 // ~ newer on top when/if possible
 pub(in crate::adapter) const MODELS: &[&str] = &[
 	// -- Anthropic Claude models
+    "anthropic/claude-opus-4.5",
+    "anthropic/claude-sonnet-4.5",
+    "anthropic/claude-haiku-4.5",
 	"anthropic/claude-opus-4",
 	"anthropic/claude-sonnet-4",
+    "anthropic/claude-3.7-sonnet:thinking",
+    "anthropic/claude-3.7-sonnet",
 	"anthropic/claude-3.5-sonnet",
 	"anthropic/claude-3.5-haiku",
 	"anthropic/claude-3-opus",
@@ -45,8 +50,19 @@ pub(in crate::adapter) const MODELS: &[&str] = &[
 	"mistralai/mixtral-8x22b-instruct",
 	"mistralai/mixtral-8x7b-instruct",
 	// -- DeepSeek models
+    "deepseek/deepseek-v3.2",
+    "deepseek/deepseek-v3.1-terminus",
+    "deepseek/deepseek-chat-v3-0324",
 	"deepseek/deepseek-chat",
 	"deepseek/deepseek-r1",
+    "deepseek/deepseek-r1-0528",
+    // Moonshot models
+    "moonshotai/kimi-k2-thinking",
+    "moonshotai/kimi-k2-0905",
+    // GLM models
+    "z-ai/glm-4.7",
+    "z-ai/glm-4.6",
+    "z-ai/glm-4.5",
 	// -- Other popular models
 	"qwen/qwen-2.5-72b-instruct",
 	"cohere/command-r-plus",
